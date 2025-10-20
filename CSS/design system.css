@@ -1,0 +1,92 @@
+@import url("/CSS/style.css");
+@import url("/CSS/assets.css");
+/* heading */
+@font-face {
+    font-family: PP-Eiko;
+    src: url("/fonts/heading/PPEiko-Thin.woff2") format("woff2");
+    font-weight: 300; /*thin*/
+    font-style: normal;
+    font-display: swap;
+}
+/* body book*/ 
+@font-face {
+    font-family: ABC-Marist-book;
+    src: url("/fonts/body/ABCMarist-Book-Trial.woff2") format("woff2");
+    font-weight: 300; 
+    font-style: normal;
+    font-display: swap;
+}
+/* body book italic*/ 
+@font-face {
+    font-family: ABC-Marist-book-italic;
+    src: url("/fonts/body/ABCMarist-BookItalic-Trial.woff2") format("woff2");
+    font-weight: 400; 
+    font-style: italic;
+    font-display: swap;
+}
+/* body semi-bold*/ 
+@font-face {
+    font-family: ABC-Marist-semi-bold;
+    src: url("/fonts/body/ABCMarist-SemiBold-Trial.woff2") format("woff2");
+    font-weight: 600; 
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Departure-Mono;
+    src: url("/fonts/secondary/DepartureMono-Regular.woff2") format("woff2");
+    font-weight: 400; 
+    font-style: normal;
+    font-display: swap;
+}
+
+.PP-Eiko {
+    font-family: PP-Eiko;
+}
+.ABC-Marist-Book {
+    font-family: ABC-Marist-Book;
+}
+.ABC-Marist-semi-bold {
+    font-family: ABC-Marist-semi-bold;
+}
+
+.Departure-Mono {
+    font-family: Departure-Mono;
+}
+
+:root {
+    /* color tokens*/
+    --off-white: 38, 100%, 98%;
+    --dark-gray: 0, 0%, 17%;
+    --gray: 204, 2%, 42%;
+    --light-gray: 0, 0%, 85%;
+
+    /*typography-*/
+
+    /* heading */
+        --heading-font-family: "PP-Eiko", serif;
+
+    /* body */
+        --body-primary-font-family: "ABC-Marist-Book", serif;
+        --body-secondary-font-family: "Departure-Mono", san-serif;
+
+    /* color */
+        --color-heading: var(--dark-gray);
+        --color-body: var(--dark-gray);
+        --color-secondary: var(--gray);
+        --color-bg: var(--off-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font-family);
+    color: var(--heading-color);
+}
+
+body {
+    font-family: var(--body-primary-font-family);
+}
+
+.secondary-body {
+    font-family: var(--body-secondary-font-family);
+}
