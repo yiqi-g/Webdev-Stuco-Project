@@ -73,8 +73,8 @@
 
     /* color */
         --color-heading: var(--dark-gray);
-        --color-body: var(--dark-gray);
-        --color-secondary: var(--gray);
+        --color-font-primary-body: var(--dark-gray);
+        --color-font-secondary-body: var(--gray);
         --color-bg: var(--off-white);
 }
 
