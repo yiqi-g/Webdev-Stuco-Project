@@ -1,5 +1,6 @@
 @import url("/CSS/style.css");
 @import url("/CSS/assets.css");
+
 /* heading */
 @font-face {
     font-family: PP-Eiko;
@@ -57,10 +58,10 @@
 
 :root {
     /* color tokens*/
-    --off-white: 38, 100%, 98%;
-    --dark-gray: 0, 0%, 17%;
-    --gray: 204, 2%, 42%;
-    --light-gray: 0, 0%, 85%;
+    --off-white: hsl(38, 100%, 98%);
+    --dark-gray: hsl(0, 0%, 17%);
+    --gray: hsl(204, 2%, 42%);
+    --light-gray: hsl(0, 0%, 85%);
 
     /*typography-*/
 
@@ -75,18 +76,118 @@
         --color-heading: var(--dark-gray);
         --color-font-primary-body: var(--dark-gray);
         --color-font-secondary-body: var(--gray);
+
         --color-bg: var(--off-white);
+
+    /* sizes */
+ 
+        --font-size-body-xs: .6875rem;
+        --font-size-body-s: .75rem;
+        --font-size-body-m: 1rem;
+        --font-size-body-l: 1.25rem;
+        --font-size-body-XL: 1.5rem;
+        --font-size-body-XXL: 1.75rem;
+
+        --font-size-h1: 4rem;
+        --font-size-h2: 3.5rem;
+        --font-size-h3: 3rem;
+        --font-size-h4: 2.5rem;
+        --font-size-h5: 1.75rem;
+        --font-size-h6: 1.5rem;
+
+
+    /* line height */
+
+        --lh-body-s: 1.125rem;
+        --lh-body-m: 1.5rem;
+        --lh-body-l: 1.5rem;
+        --lh-body-XL: 2.625rem;
+
+        --lh-heading-h1: 5.5rem;
+        --lh-heading-h2: 4.25rem;
+        --lh-heading-h3: 3.5rem;
+        --lh-heading-h4: 3rem;
+        --lh-heading-h5: 2rem;
+        --lh-heading-h6: 1.75rem;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
     font-family: var(--heading-font-family);
     color: var(--heading-color);
 }
 
+h1 {
+    margin: 0;
+    font-size: var(--font-size-h1);
+    line-height: var(--lh-heading-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    line-height: var(--lh-heading-h2);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    line-height: var(--lh-heading-h3);
+}
+
+h4 {
+    font-size: var(--font-size-h4);
+    line-height: var(--lh-heading-h4);
+}
+
+h5 {
+    font-size: var(--font-size-h5);
+    line-height: var(--lh-heading-h5);
+}
+
+h6 {
+    font-size: var(--font-size-h6);
+    line-height: var(--lh-heading-h6);
+}
+
 body {
+    margin: 0;
     font-family: var(--body-primary-font-family);
+    font-size: var(--font-size-m);
+    line-height: var(--lh-body-m);
+    color: var(--color-font-primary-body);
 }
 
 .secondary-body {
     font-family: var(--body-secondary-font-family);
 }
+
+.body-primary-book-xs {
+    font-family: var(--body-primary-font-family);
+    font-size: var(--font-size-body-xs);
+    line-height: var(--lh-body-s);
+}
+
+.body-primary-book-small {
+    font-family: var(--body-primary-font-family);
+    font-size: var(--font-size-body-s);
+    line-height: var(--lh-body-s);
+}
+
+.body-primary-book-medium {
+    font-family: var(--body-primary-font-family);
+    font-size: var(--font-size-body-m);
+    line-height: var(--lh-body-m);
+}
+
+.body-primary-book-large {
+    font-family: var(--body-primary-font-family);
+    font-size: var(--font-size-body-l);
+    line-height: var(--lh-body-l);
+}
+
+.body-primary-book-XL {
+    font-family: var(--body-primary-font-family);
+    font-size: var(--font-size-body-XL);
+    line-height: var(--lh-body-XL);
+}
+

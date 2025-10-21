@@ -1,2 +1,40 @@
-@import url("/CSS/design-system.css");
-@import url("/CSS/assets.css");
+html {
+    -webkit-font-smoothing: antialised;
+    text-rendering: geometricPrecision;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-bg);
+}
+
+.standard-section {
+    padding: 3rem 8.875rem 0;
+}
+
+.standard-section.header {
+    padding-top: 7.25rem;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: .5rem;
+
+}
+
+.page-header {
+    padding-bottom: 2rem;
+}
+
+.header-description {
+    color: var(--color-font-secondary-body);
+    max-width: 40rem;
+}
+
+.child {
+    background-color: var(--light-gray);
+    aspect-ratio: 1;
+}
