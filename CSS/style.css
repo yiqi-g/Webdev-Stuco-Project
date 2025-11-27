@@ -1,12 +1,16 @@
-html {
-    -webkit-font-smoothing: antialised;
-    text-rendering: geometricPrecision;
+@import url("/CSS/design-system.css");
+
+:root{
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
 }
 
 body {
     margin: 0;
     background-color: var(--color-bg);
 }
+
 
 .standard-section {
     padding: 3rem 8.875rem 0;
@@ -30,6 +34,8 @@ body {
 }
 
 .header-description {
+    font-family: var(--body-primary-font-family);
+    font-weight: bold;
     color: var(--color-font-secondary-body);
     max-width: 40rem;
 }

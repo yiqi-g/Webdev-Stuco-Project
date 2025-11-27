@@ -9,30 +9,7 @@
     font-style: normal;
     font-display: swap;
 }
-/* body book*/ 
-@font-face {
-    font-family: ABC-Marist-book;
-    src: url("/fonts/body/ABCMarist-Book-Trial.woff2") format("woff2");
-    font-weight: 300; 
-    font-style: normal;
-    font-display: swap;
-}
-/* body book italic*/ 
-@font-face {
-    font-family: ABC-Marist-book-italic;
-    src: url("/fonts/body/ABCMarist-BookItalic-Trial.woff2") format("woff2");
-    font-weight: 400; 
-    font-style: italic;
-    font-display: swap;
-}
-/* body semi-bold*/ 
-@font-face {
-    font-family: ABC-Marist-semi-bold;
-    src: url("/fonts/body/ABCMarist-SemiBold-Trial.woff2") format("woff2");
-    font-weight: 600; 
-    font-style: normal;
-    font-display: swap;
-}
+
 
 @font-face {
     font-family: Departure-Mono;
@@ -45,15 +22,27 @@
 .PP-Eiko {
     font-family: PP-Eiko;
 }
-.ABC-Marist-Book {
-    font-family: ABC-Marist-Book;
-}
-.ABC-Marist-semi-bold {
-    font-family: ABC-Marist-semi-bold;
-}
 
 .Departure-Mono {
     font-family: Departure-Mono;
+}
+
+.nanum-myeongjo-regular {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nanum-myeongjo-bold {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.nanum-myeongjo-extrabold {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 :root {
@@ -69,7 +58,7 @@
         --heading-font-family: "PP-Eiko", serif;
 
     /* body */
-        --body-primary-font-family: "ABC-Marist-Book", serif;
+        --body-primary-font-family: "Nanum Myeongjo", serif;
         --body-secondary-font-family: "Departure-Mono", san-serif;
 
     /* color */
