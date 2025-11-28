@@ -4,7 +4,7 @@
 /* heading */
 @font-face {
     font-family: PP-Eiko;
-    src: url("/fonts/heading/PPEiko-Thin.woff2") format("woff2");
+    src: url("/fonts/PP-Eiko/PPEiko-Thin.woff2") format("woff2");
     font-weight: 300; /*thin*/
     font-style: normal;
     font-display: swap;
@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: Departure-Mono;
-    src: url("/fonts/secondary/DepartureMono-Regular.woff2") format("woff2");
+    src: url("/fonts/Departure-Mono/DepartureMono-Regular.woff2") format("woff2");
     font-weight: 400; 
     font-style: normal;
     font-display: swap;
@@ -87,6 +87,7 @@
 
     /* line height */
 
+        --lh-body-xs: 1rem;
         --lh-body-s: 1.125rem;
         --lh-body-m: 1.5rem;
         --lh-body-l: 1.5rem;
@@ -148,6 +149,9 @@ body {
 
 .secondary-body {
     font-family: var(--body-secondary-font-family);
+    font-size: var(--font-size-body-s);
+    line-height: var(--lh-body-xs);
+    color: var(--color-font-secondary-body);
 }
 
 .body-primary-book-xs {

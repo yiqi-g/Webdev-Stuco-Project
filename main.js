@@ -1,3 +1,5 @@
-// const hoverElement = getElementByID('child');
+const blog1 = document.getElementById("blog-1");
 
-// hoverElement.addEventListener("hover", (e) => )
+blog1.onclick() = function() {
+    window.location.href = "blog-1.html";
+};
