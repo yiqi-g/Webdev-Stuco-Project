@@ -9,7 +9,29 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: PP-Eiko;
+    src: url("/fonts/PP-Eiko/PPEiko-Thin.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: PP-Eiko;
+    src: url("/fonts/PP-Eiko/PPEiko-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: PP-Eiko;
+    src: url("/fonts/PP-Eiko/PPEiko-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
 @font-face {
     font-family: Departure-Mono;
@@ -21,9 +43,10 @@
 
 .PP-Eiko {
     font-family: PP-Eiko;
+    font-weight: 300;
 }
 
-.Departure-Mono {
+.departure-mono {
     font-family: Departure-Mono;
 }
 
@@ -51,6 +74,7 @@
     --dark-gray: hsl(0, 0%, 17%);
     --gray: hsl(204, 2%, 42%);
     --light-gray: hsl(0, 0%, 85%);
+    
 
     /*typography-*/
 
@@ -59,7 +83,7 @@
 
     /* body */
         --body-primary-font-family: "Nanum Myeongjo", serif;
-        --body-secondary-font-family: "Departure-Mono", san-serif;
+        --body-secondary-font-family: "departure-mono", san-serif;
 
     /* color */
         --color-heading: var(--dark-gray);
@@ -90,7 +114,7 @@
         --lh-body-xs: 1rem;
         --lh-body-s: 1.125rem;
         --lh-body-m: 1.5rem;
-        --lh-body-l: 1.5rem;
+        --lh-body-l: 33.6px;
         --lh-body-XL: 2.625rem;
 
         --lh-heading-h1: 5.5rem;
@@ -148,39 +172,48 @@ body {
 }
 
 .secondary-body {
+
+    text-transform: uppercase;
+
     font-family: var(--body-secondary-font-family);
     font-size: var(--font-size-body-s);
     line-height: var(--lh-body-xs);
     color: var(--color-font-secondary-body);
 }
 
-.body-primary-book-xs {
+.body-primary-xs {
     font-family: var(--body-primary-font-family);
     font-size: var(--font-size-body-xs);
     line-height: var(--lh-body-s);
+    font-weight: 700;
 }
 
-.body-primary-book-small {
+.body-primary-small {
     font-family: var(--body-primary-font-family);
     font-size: var(--font-size-body-s);
     line-height: var(--lh-body-s);
+    font-weight: 700;
 }
 
-.body-primary-book-medium {
+.body-primary-medium {
     font-family: var(--body-primary-font-family);
     font-size: var(--font-size-body-m);
     line-height: var(--lh-body-m);
+    font-weight: 700;
 }
 
-.body-primary-book-large {
+.body-primary-large {
     font-family: var(--body-primary-font-family);
     font-size: var(--font-size-body-l);
     line-height: var(--lh-body-l);
+    font-weight: 700;
+    
 }
 
-.body-primary-book-XL {
+.body-primary-XL {
     font-family: var(--body-primary-font-family);
     font-size: var(--font-size-body-XL);
     line-height: var(--lh-body-XL);
+    font-weight: 700;
 }
 

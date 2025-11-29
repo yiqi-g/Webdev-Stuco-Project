@@ -16,6 +16,21 @@ p {
     margin: 0%;
 }
 
+blockquote {
+    text-indent: -0.4em;
+    margin: 2rem 0;
+    color: var(--gray);
+
+    @supports (hanging-punctuation: first) {
+        blockquote {
+            text-indent: 0;
+            hanging-punctuation: first;
+            margin: 2rem 0;
+            color: var(--gray);
+        }
+    }
+}
+
 img {
     display: block;
     width: 100%;
@@ -38,6 +53,23 @@ button {
 
 button:hover {
     background-color: #EEEEEE;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--body-secondary-font-family);
+    font-size: var(--font-size-body-s);
+    line-height: var(--lh-body-xs);
+    color: var(--color-font-secondary-body);
+
+    &:hover {
+        color: var(--light-gray);
+    }
+}
+
+.body-primary-large.quote  {
+    
 }
 
 .standard-section {
@@ -66,11 +98,17 @@ button:hover {
     padding-bottom: 2rem;
 }
 
-.header-description {
+.body-paragraph {
     font-family: var(--body-primary-font-family);
+    line-height: 1.75rem;
     font-weight: bold;
     color: var(--color-font-secondary-body);
     max-width: 40rem;
+
+    &.blog {
+        color: var(--color-font-primary-body);
+        font-size: 16px;
+    }
 }
 
 .item {
@@ -85,12 +123,31 @@ button:hover {
 }
 
 .item.item--blog {
+    cursor: alias;
     display: flex;
     padding: 1rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     min-width: 0;
+
+    &:hover {
+        background-color: #F2EEE8;
+    }
+}
+
+.item.item--project {
+    cursor: alias;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 0;
+
+    &:hover {
+        background-color: #F2EEE8;
+    }
 }
 
 .tag {
@@ -104,18 +161,22 @@ button:hover {
     padding-top: 2px;
     padding-bottom: 2px;
 
-    border-radius: 4px;
 
-    background-color: #EEEEEE;
+}
 
-
+.blog {
+    width: 100%;
+    max-width: 36rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer {
     min-height: 10rem;
 }
 
-.body-primary-book-medium.post {
+.body-primary-medium.post {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
